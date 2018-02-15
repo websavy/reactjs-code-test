@@ -1,0 +1,90 @@
+$sale: #cc3333;
+$exclusive: #009900;
+$white: #ffffff;
+$border-grey: #e1e1e1;
+$skyblue: #def1f4;
+$darkgrey: #333333;
+
+
+.header-section{
+  @media only screen and (min-width:576px){
+    margin-right: -13px;
+  }
+  .title-container{
+    background-color: $skyblue;
+    margin-left: -1px;
+    @media only screen and (max-width:575px){
+      width: 90%;
+      margin: 0 auto;
+    }
+    @media only screen and (max-width:420px){
+      text-align: center;
+    }
+
+    h2{
+      color: $darkgrey;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .form-group{
+      &.float-right{
+        @media only screen and (max-width:420px){
+          float: none !important;
+        }
+        select{
+          @media only screen and (max-width:420px){
+            width: 140px;
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.product-holder-grp{
+  border: 1px solid $border-grey;
+  border-collapse: separate;
+  margin-top: -1px;
+  margin-left: -1px;
+  width: 25%;
+  @media only screen and (max-width:1199px){
+    width: 33.3%;
+  }
+  @media only screen and (max-width:991px){
+    width: 50%;
+  }
+  @media only screen and (max-width:575px){
+    width: 90%;
+    margin: -1px auto 0 auto;
+  }
+  .product-holder{
+    @media only screen and (max-width:575px){
+      text-align: center;
+    }
+    .sale,.exclusive{
+      color: $white;
+      @media only screen and (max-width:575px){
+        margin: 0 auto;
+      }
+    }
+    .sale{
+      background-color: $sale;
+    }
+    .exclusive{
+      background-color: $exclusive;
+    }
+    .product-title, .product-price{
+      margin: 0;
+    }
+    .product-title{
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .product-price{
+      font-size: 26px;
+      font-weight: 700;
+    }
+  }
+}

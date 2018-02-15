@@ -4,7 +4,7 @@
   "description": "A reactjs project",
   "main": "index.js",
   "scripts": {
-    "build": "webpack-dev-server --progress --inline --hot"
+    "build": "webpack-dev-server --progress --inline --hot --open"
   },
   "author": "Sav",
   "license": "ISC",
